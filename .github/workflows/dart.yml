@@ -25,9 +25,9 @@ jobs:
 
       - name: Dukou checkin
         env:
-          EMAIL_KEY: ${{email_key}}
-          PASSWD_KEY: ${{passwd_key}}
-          SERVER_KEY: ${{server_key}}
+          EMAIL_KEY: ${{  email_key  }}
+          PASSWD_KEY: ${{  passwd_key  }}
+          SERVER_KEY: ${{  server_key  }}
         run: |
           dart pub get
           dart bin/dukou_chekin.dart
