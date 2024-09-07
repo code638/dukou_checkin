@@ -68,7 +68,7 @@ Future<CheckinResult> checkin(String token) async {
     headers: {
       'access-token': token,
     },
-  )).get('https://flzt.top/user/index');
+  )).get(''https://flzt.top/user/index');
   print(response.data);
   return CheckinResult.fromJson(json.decode(response.data));
 }
