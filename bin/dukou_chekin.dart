@@ -75,7 +75,7 @@ Future<CheckinResult> checkin(String token) async {
 
 Future<TransformResult> trafficTransform(int num, String token) async {
   var response = await Dio(BaseOptions(headers: {'access-token': token})).get(
-    'https://dukou.dev/api/user/koukanntraffic',
+    'https://flzt.top/api/user/koukanntraffic',
     queryParameters: {'traffic': num},
   );
   print(response.data);
